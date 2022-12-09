@@ -1,0 +1,19 @@
+{
+    "name" : "Boost Boost Boost",
+    "version" : "1.0",
+    "description" : "A Boost to Boost your Boosts! (It helps with boost installs)",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": ["*://*.example.com/*"],
+            "js": [
+                "extension.js", "run_wasm.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [{
+        "resources": ["extension_bg.wasm"],
+        "matches": ["*://*.example.com/*"]
+    }],
+    "manifest_version": 3
+}
