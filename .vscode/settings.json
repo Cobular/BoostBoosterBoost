@@ -1,5 +1,11 @@
 {
   "emmet.includeLanguages": {
     "rust": "html"
-  }
+  },
+  "rust-analyzer.checkOnSave.extraArgs": [
+    "--no-deps"
+  ],
+  "rust-analyzer.checkOnSave.extraEnv": {
+      "RUSTFLAGS": "-C target-cpu=native -Zshare-generics=y -Csplit-debuginfo=unpacked"
+  },
 }
