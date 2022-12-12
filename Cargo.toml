@@ -1,2 +1,2 @@
 [workspace]
-members = ["app", "app/src-tauri"]
+members = ["app/src-tauri"]

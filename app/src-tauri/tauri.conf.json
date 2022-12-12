@@ -1,10 +1,10 @@
 {
   "build": {
-    "beforeDevCommand": "trunk serve",
-    "beforeBuildCommand": "trunk build",
-    "devPath": "http://localhost:1420",
-    "distDir": "../dist",
-    "withGlobalTauri": true
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devPath": "http://localhost:5173",
+    "distDir": "../build",
+    "withGlobalTauri": false
   },
   "package": {
     "productName": "app",
